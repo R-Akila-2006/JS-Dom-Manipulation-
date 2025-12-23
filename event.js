@@ -35,3 +35,54 @@ function add(){
     console.log(to)
     re.textContent = to
 }
+// Random number // 
+
+// Math.random() function create 0.0 t0 0.9//
+let ra = Math.random()
+console.log(ra);
+
+// Math.floor()
+var fl = Math.floor(0.8934);
+console.log(fl)
+// this print 0 because it take the before "."//
+var f2 = Math.floor(7.89)
+console.log(f2)
+// It print 7 //
+
+// Now I want 1 10 10 randam number//
+var f3 = Math.random()
+console.log(Math.floor(f3*10)+1);
+
+// Number gussing Game //
+//🎯 challenge -1//
+let r = document.getElementById("ran");
+let me = document.getElementById("mess");
+let guess = Math.floor(Math.random()*10)
+let s = document.getElementById("sco")
+var total = 10
+
+function check(){
+    var invalue = r.value
+    if(guess == invalue){
+        console.log("Right")
+        me.textContent = "Right"
+        alert("you won 🥇")
+    }
+    else{
+        me.textContent ="Wrong"
+
+        total=total-1
+        s.textContent = "Score:"+total
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
