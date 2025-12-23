@@ -1,3 +1,11 @@
 h1{
     color: blueviolet;
 }
+
+/*  <!-- change the background color of div --> */
+
+#con{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
