@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task📝</title>
+</head>
+<body>
+    <!-- challenge 🎯 -1
+     1.create an input tag with is "inputbox"
+     2.create an h1 tag with the id "result"
+     my task is to:
+     1.Retrive the value from the input box
+     2.Insert this vlaue into the h1 tag using "textcontent" -->
+     <input id="inputbox" onkeyup="update()">
+     <h1 id="result"></h1>
+
+     <!-- End -->
+    <hr>
+    <button id="btn" onclick="add()">click me</button>
+    <div id="title"></div>
+
+    <!-- End -->
+    <hr>
+
+    <!-- challenge 3 🎯
+     How can I crate an html button that,when clicked , trigger a javascript function, and change the button's color to red with each sucessive click? -->
+    <button id="btn1" onclick="change()">Change colour▶️</button>
+
+    <!-- End -->
+    <hr>
+    <!-- challemge 4 🎯
+     How can I make it so that when a user clicks a button , the text from that button is showb in the h1 tag located above it -->
+    <h1 id="name">Name</h1>
+    <button id="Ak" onclick="first()">Ak</button>
+    <button id="potter" onclick="second()">potter</button>
+    <button id="Harry" onclick="third()">Harry</button>
+    <hr>
+
+    <!-- Another way to create this task -->
+    <h1 id="con">Name</h1>
+    <button onclick="update(event)">Ak</button>
+    <button onclick="update(event)">Harry</button>
+    <button onclick="update(event)">Potter</button>
+    <!-- event is containg about the button tag -->
+
+
+    
+    <hr>
+
+
+    <!-- End -->
+
+    <!-- challenge 🎯 -5 -->
+     <!-- delete the h1 tag content -->
+    <h1  onclick="deleteh1(event)">one</h1>
+    <h1  onclick="deleteh1(event)">two</h1>
+    <h1  onclick="deleteh1(event)">three</h1>
+    <h1  onclick="deleteh1(event)">four</h1>
+    <h1  onclick="deleteh1(event)">five</h1>
+
+
+
+     <script src="task.js"></script>
+</body>
+</html>
