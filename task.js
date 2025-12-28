@@ -1,7 +1,7 @@
 // select the element by using ID//
 let a = document.getElementById("inputbox")
 let b = document.getElementById("result")
-function update(){
+function updateIn(){
     b.textContent = a.value
 }
 
