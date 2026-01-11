@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List📝</title>
+    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
     <!-- innerHTML -->
@@ -25,6 +26,69 @@
 <h3 class="num">one</h3>
 <h3 class="num">two</h3>
 <h3 class="num">three</h3>
+
+<!-- End -->
+<hr>
+<!-- getElementsByclass -->
+<h4 class="four">POTTER</h4>
+<h4 class="four">RON</h4>
+<!-- //// Access text content of the first element with class "four"/// -->
+ <!--Selects all HTML elements that have the given class name
+ Returns an HTMLCollection (array-like), so elements are accessed using index
+ -->
+
+<!-- End -->
+<hr>
+<!-- getElementsByIdName -->
+<p>Hello I am Harry potter</p>
+<button onclick="change()">click</button>
+<!--  Selects all HTML elements with the given tag name
+// Returns an HTMLCollection, so index or loop is required
+ -->
+<hr>
+<!-- prepend -->
+<div id="div">
+    <h1>Ak</h1>
+</div>
+<!-- It will print below the Ak -->
+<!-- If you want any content use prepend -->
+<!-- insertAdjacentElement -->
+ <!-- insertAdjacebtElement 4 way to insert the element
+1.afterbegin 
+2.afterend
+3.beforbegin
+4.beforend -->
+<!-- insertAdjacentElement(position, ELEMENT)
+ -->
+
+
+<!-- End -->
+<hr>
+
+<!-- Delete the element -->
+<h1 id="k">hello world</h1>
+<h2 id="j">Bye</h2>
+<button onclick="pot()">Remove</button>
+<!-- End -->
+<hr>
+<!-- ....................Now this the Todo List📝........................-->
+
+
+<div class="todo">
+    <h1 id="ti">Todo List📝</h1>
+<input id="in" placeholder="TypeHere">
+<button onclick="add()">Add</button>
+<ul id="ulitem">
+    <li id="item">Hello
+        <button onclick="dele(event)">Delete</button>
+           
+    </li>
+    
+
+  
+</ul>
+</div>
+
 
 
 

@@ -58,3 +58,66 @@ for(i=0;i<e.length;i++){
 for(i=0;i<e.length;i++){
     console.log(e[i].textContent)
 }
+//End//
+
+//getElementsByClass//
+let f = document.getElementsByClassName("four")
+console.log(f[1].textContent)
+// Access text content of the first element with class "four"//
+
+// Selects all HTML elements that have the given class name
+// Returns an HTMLCollection (array-like), so elements are accessed using index
+
+//End//
+
+//getElementsByIdName//
+let g = document.getElementsByTagName("p")
+function change(){
+    g[0].style.backgroundColor = "red";
+}
+// Selects all HTML elements with the given tag name
+// Returns an HTMLCollection, so index or loop is required
+
+// prepend //
+var div = document.getElementById("div")
+div.append("Hello Harry")
+div.prepend("Hey Ak.........")
+
+//insertAdjacentElement //
+var p = document.createElement("p")
+p.textContent="bye"
+div.insertAdjacentElement("afterend",p)
+
+// insertAdjacebtElement 4 way to insert the element
+// 1.afterbegin 
+// 2.afterend
+// 3.beforbegin
+// 4.beforend
+// insertAdjacentElement(position, ELEMENT)//
+
+
+
+//End //
+// Delete the element //
+
+let o = document.getElementById("j")
+function pot(){
+    o.remove()
+}
+//End //
+
+//...............Now is the Todo List📝........................ /////
+
+let inp = document.getElementById("in")
+let tak = document.getElementById("item")
+let uli = document.getElementById("ulitem")
+function add(){
+    let harry = document.createElement("li")
+    harry.innerHTML = inp.value + "<button onclick = 'dele(event)'>Delete</button>"
+    uli.append(harry)
+}
+function dele(event){
+    event.target.parentElement.remove()
+
+   
+}
